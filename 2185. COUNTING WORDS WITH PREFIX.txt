@@ -1,0 +1,10 @@
+int prefixCount(char** words, int wordsSize, char* pref) {
+ int len=strlen(pref);
+ int count=0;
+ for(int i=0;i<wordsSize;i++){
+    if(strncmp(words[i],pref,len)==NULL){
+        count++;
+    }   
+ }   
+ return count;
+}
